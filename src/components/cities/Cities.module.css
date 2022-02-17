@@ -1,0 +1,134 @@
+.citiesContainer {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 4rem;
+  min-height: 80vh;
+}
+
+.refreshAndSearch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.refreshButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.refreshButton:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.1rem 0.1rem 0.1rem black;
+}
+
+.refreshIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.findCity {
+  position: relative;
+}
+
+.findCityInput {
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 16px;
+}
+
+.searchIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.2rem;
+}
+
+.findCityInput[type="text"]::placeholder {
+  padding-left: 2rem;
+}
+
+.cities {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.errorText {
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.cityContainer {
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: #d1cdcd;
+  padding: 1rem;
+  position: relative;
+}
+
+.cityNameAndIcon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cityName {
+  font-size: 2.6rem;
+}
+
+.weatherIcon {
+  height: 12rem;
+}
+
+.mainWeather {
+  font-size: 2.6rem;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.degree {
+  font-size: 5rem !important;
+  text-align: center;
+  margin: 0;
+}
+
+.deleteIcon {
+  position: absolute;
+  cursor: pointer;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.deleteIcon:hover {
+  transform: translateY(-0.2rem) scale(1.05);
+}
+
+@media (max-width: 75em) {
+  .citiesContainer {
+    width: 80%;
+  }
+  .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 56.25em) {
+  .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

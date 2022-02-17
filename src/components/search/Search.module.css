@@ -1,0 +1,69 @@
+.searchBarContainer {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  padding-top: 4rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.labelContainer {
+  margin-bottom: 0.6rem;
+  display: flex;
+  font-size: 2.4rem;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 2.4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.searchInput {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.searchButton {
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.searchButton:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.1rem 0.1rem 0.1rem black;
+}
+
+.addIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+@media (max-width: 56.25em) {
+  .searchBarContainer {
+    width: 80%;
+  }
+}
