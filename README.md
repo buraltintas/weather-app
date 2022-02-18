@@ -1,3 +1,8 @@
+WEATHER APP
+
+Simple weather application that you can see the weather of city that entered.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
