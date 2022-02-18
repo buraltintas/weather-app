@@ -6,7 +6,7 @@ import { add } from "../../store/citySlice";
 
 const Search = () => {
   const [input, setInput] = useState("");
-  const reducerCity = useSelector((state) => state.cities);
+
   const dispatch = useDispatch();
 
   const inputRef = useRef();
@@ -34,7 +34,7 @@ const Search = () => {
       );
     };
 
-    fetchDataAction(inputRef.current.value);
+    fetchDataAction(inputRef.current.value.toLowerCase());
 
     setInput("");
   };
@@ -56,7 +56,7 @@ const Search = () => {
             required
             ref={inputRef}
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value.toLowerCase())}
           />
 
           <button className={classes.searchButton}>

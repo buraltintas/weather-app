@@ -22,7 +22,7 @@
 }
 
 .labelContainer {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   display: flex;
   font-size: 2.4rem;
 }
@@ -31,6 +31,7 @@
   width: 100%;
   height: 2.4rem;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -38,11 +39,14 @@
   flex-grow: 1;
   font-size: 16px;
   border-radius: 1rem;
-  padding-left: 0.8rem;
+
+  padding: 0.8rem;
 }
 
 .searchButton {
-  width: 7rem;
+  color: inherit;
+  width: 8rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +54,7 @@
   background-color: transparent;
   cursor: pointer;
   padding: 1rem;
+  border: 2px solid black;
   border-radius: 1rem;
   transition: all 0.3s;
 }
