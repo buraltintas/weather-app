@@ -21,6 +21,7 @@
   background-color: transparent;
   border: 2px solid black;
   border-radius: 1rem;
+  padding: 0.8rem;
   transition: all 0.3s;
 }
 
@@ -43,6 +44,13 @@
   border-radius: 1rem;
   text-align: center;
   font-size: 16px;
+  padding: 0.8rem;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  font-size: 16px !important;
 }
 
 .searchIcon {
@@ -50,7 +58,7 @@
   height: 1.8rem;
   position: absolute;
   left: 0.4rem;
-  top: 0.2rem;
+  top: 25%;
 }
 
 .findCityInput[type="text"]::placeholder {
