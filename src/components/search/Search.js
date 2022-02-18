@@ -17,7 +17,7 @@ const Search = () => {
     const fetchDataAction = async (cityName) => {
       const data = await axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=008ad9989bf7a9b2e874bb945d0840f0&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=008ad9989bf7a9b2e874bb945d0840f0&units=metric`
         )
         .catch((err) => {
           alert(`Cannot find "${input}". Try another city name!`);
