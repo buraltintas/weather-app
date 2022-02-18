@@ -43,7 +43,7 @@
 .findCityInput {
   border-radius: 1rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 16px !important;
   padding: 0.8rem;
 }
 
@@ -59,10 +59,6 @@ textarea {
   position: absolute;
   left: 0.4rem;
   top: 25%;
-}
-
-.findCityInput[type="text"]::placeholder {
-  padding-left: 2rem;
 }
 
 .cities {
