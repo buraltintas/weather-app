@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.navLink,
+.navLink:visited {
+  color: #5252529c;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.active {
+  border-bottom: 2px solid black;
+  color: #525252 !important;
+}

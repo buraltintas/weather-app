@@ -3,8 +3,6 @@ import axios from "axios";
 import classes from "./Search.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { add } from "../../store/citySlice";
-import logo from "./logo.svg";
-import Cities from "../cities/Cities";
 
 const Search = () => {
   const [input, setInput] = useState("");
@@ -43,9 +41,6 @@ const Search = () => {
 
   return (
     <div className={classes.searchBarContainer}>
-      <div className={classes.logoContainer}>
-        <img src={logo} alt="logo of app" className={classes.logo} />
-      </div>
       <form onSubmit={addCityHandler} className={classes.form}>
         <div className={classes.labelContainer}>
           <label className={classes.label} htmlFor="search">

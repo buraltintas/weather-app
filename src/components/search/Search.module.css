@@ -1,5 +1,5 @@
 .searchBarContainer {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -37,6 +37,8 @@
 .searchInput {
   flex-grow: 1;
   font-size: 16px;
+  border-radius: 1rem;
+  padding-left: 0.8rem;
 }
 
 .searchButton {
