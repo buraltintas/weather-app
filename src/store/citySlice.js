@@ -13,7 +13,6 @@ const citySlice = createSlice({
       state.splice(action.payload.index, 1);
     },
     refresh: (state, action) => {
-      console.log(action);
       state = action;
     },
   },
